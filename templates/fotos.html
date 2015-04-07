@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="shortcut icon" type="image/x-icon" href="../statics/img/favicon.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="../statics/css/estilos.css">
+</head>
+<body>
+<header class="Cabecera">
+	<div class="Cabecera-social">
+		<a class="Cabecera-socialContainer" href="#">
+			<img class="Cabecera-socialLink" src="../statics/img/logoFacebook.png"  width="30" height="30" alt="Imagen Social">
+		</a>
+		<a class="Cabecera-socialContainer" href="#">
+			<img class="Cabecera-socialLink" src="../statics/img/logoTwiter.png"  width="30" height="30" alt="Imagen Social">
+		</a>
+		<a class="Cabecera-socialContainer" href="#">
+			<img class="Cabecera-socialLink" src="../statics/img/logoYouTube.png"  width="30" height="30" alt="Imagen Social">
+		</a>
+		<a class="Cabecera-socialContainer" href="#">
+			<img class="Cabecera-socialLink" src="../statics/img/logoRedSocial.png"  width="30" height="30" alt="Imagen Social">
+		</a>
+	</div>
+	<nav class="Cabecera-navegacion">
+		<div class="Cabecera-logoConteiner">
+			<a href="index.html" class="">
+				<img class="Cabecera-logo " src="../statics/img/logoEcoPeru.png" alt="Logo EcoPerú">
+			</a>
+<!-- 		<div class="Cabecera-contenedorObras">
+			<a href="obrasEjecutadas.html" class="Cabecera-enlaceObra">OBRAS EJECUTADAS</a>
+			<a href="obrasEnEjecucion.html" class="Cabecera-enlaceObra ejecucion">OBRAS EN EJECUCIÓN</a>
+		</div> -->
+
+		</div>
+	<a  href="#" class="Cabecera-button icon-list" id="showMenu">
+		</a>
+		<ul class="Cabecera-navegacionList" id="menu">
+			<li class="Cabecera-navegacionItem">
+				<a id="tab1" class="Cabecera-navegacionLink"href="index.html">
+				INICIO
+					<div class="u-triangle"></div>
+				</a>
+			</li>
+			<li class="Cabecera-navegacionItem">
+				<a id="tab2" class="Cabecera-navegacionLink"href="quienesSomos.html">
+				QUIENES SOMOS
+					<div class="u-triangle"></div>
+				</a>
+			</li>
+			<li class="Cabecera-navegacionItem">
+				<a id="tab3" class="Cabecera-navegacionLink"href="especialidades.html">
+				RECREO
+					<div class="u-triangle"></div>
+				</a>
+			</li>
+			<li class="Cabecera-navegacionItem">
+				<a id="tab4" class="Cabecera-navegacionLink"href="equipos.html">
+				PAQUETES
+					<div class="u-triangle"></div>
+				</a>
+			</li>
+			<li class="Cabecera-navegacionItem">
+				<a id="tab5" class="Cabecera-navegacionLink"href="fotos.html">
+				FOTOS
+					<div class="u-triangle"></div>
+				</a>
+			</li>
+			<li class="Cabecera-navegacionItem">
+				<a id="tab6" class="Cabecera-navegacionLink"href="contactanos.html">
+				CONTÁCTANOS
+					<div class="u-triangle"></div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+</header>
+<section class="Cuerpo">
+<div class="fotosCarusel">
+<div class="contenedor">
+<h1 class="obrasTitleE fotitos">FOTOS</h1>
+    <ul class="rslides aux" id="slider3">
+
+      <li><img src="../statics/img/fotos/1.jpg" alt=""></li>
+      <li><img src="../statics/img/fotos/2.jpg" alt=""></li>
+      <li><img src="../statics/img/fotos/3.jpg" alt=""></li>
+    </ul>
+</div>
+<div class="descripcionFoto">
+	<h2 class="tituloFoto">DESCRIPCION</h2>
+	Esta imagen describe algo indescriptible Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum exercitationem tempora nostrum magnam id non, minus
+</div>
+    <ul id="slider3-pager">
+      <li><a href="#"><img src="../statics/img/fotos/1_thumb.jpg" alt=""></a></li>
+      <li><a href="#"><img src="../statics/img/fotos/2_thumb.jpg" alt=""></a></li>
+      <li><a href="#"><img src="../statics/img/fotos/3_thumb.jpg" alt=""></a></li>
+    </ul>
+
+</div>
+</section>	
+
+
+<footer class="Pie">
+	<p class="Pie-text">RECREO TURÍSTICO EL OTORONGO</p>
+	<p class="Pie-text">DERECHOS RESERVADOS 2014</p>
+	<div class="Pie-busqueda">
+		<label for="buscar" class="Pie-busquedaText">BUSCAR</label>
+		<input type="search" id="buscar">
+		<input type="submit" value="+" class="Pie-busquedaPlus">
+	</div>
+<!--<script type="text/javascript" src="../statics/js/hammer.min.js"></script> -->
+	<script type="text/javascript" src="../statics/js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="../statics/js/responsiveslides.min.js" ></script>
+	<script type="text/javascript" src="../statics/js/codiguito.js"> </script>
+	 <script>
+    $(function () {
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 700
+      });
+
+    });
+   </script>
+</footer>	
+</body>
+</html>
